@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Presentation</title>
+
+		<meta name="description" content="Brandeis 2017 Talk">
+		<meta name="author" content="Michael J. Harms">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<link rel="stylesheet" href="presentation-data/css/override.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is a slide -->
+			<div class="slides">
+
+                <section>
+                    <h3>Ensembles, Epistasis and Evolution</h3>
+                    <br/>
+                    <h4>Mike Harms</h4>
+                    <h4>University of Oregon</h4>
+                    <br/>
+                    <p class="fragment">Gaining evolutionary insights <em>from</em> folding.</p>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>How do events alter future outcomes?</h4>
+                    <div align="center">
+                        <img src="presentation-data/img/spock-0.png" height="100%" width="100%" />
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>How do events alter future outcomes?</h4>
+                    <div align="center">
+                        <img src="presentation-data/img/spock-1.png" height="100%" width="100%" />
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>How do events alter future outcomes?</h4>
+                    <div align="center">
+                        <img src="presentation-data/img/spock-3.png" height="100%" width="100%" />
+                    </div>
+                </section>
+    
+                <section>
+                    <h4>How do the physical properties of proteins shape their evolution?</h4>
+                    <br/>
+                    <h4 class="fragment" style="color:blue">Thermodynamic ensembles create long-term evolutionary memory</h4> 
+                </section>
+
+                <section>
+                    <h4>Evolutionary memory: the case of oseltamivir resistance in H1N1 influenza</h4>
+                    <ul> 
+                        <li class="fragment">In 1991, the H274Y mutation to an influenza protein was shown to compromise viral fitness</li>
+                        <li class="fragment">In 2008, H274Y entered the H1N1 population and conferred resistance to the drug oseltamivir</li>
+                        <li class="fragment">Between 1991 and 2008, mutations accumulated that offset the deleterious effect of H274Y.</li>
+                    </ul>
+                    <br/>
+                    <br/>
+                    <small>Bloom et al. (2010) <em>Science</em> 328:1272</small>
+                    <br/>
+
+                    <h4 class="fragment"><span style="color:blue">Evolutionary memory:</span> the effect of a mutation depends on previous substitutions</h4>
+                    <p class="fragment">(epistasis + time)</p>
+                </section>
+
+                <section>
+                    <h4>Memory can be quantified by decomposing a mutant cycle</h4>
+                    <p align="center">
+                        <img class="img-responsive" height="30%" width="30%" src="presentation-data/img/basic-model.png" />
+                    </p>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>Memory arises from unfolding free energy</h4>
+                    <div align="center">
+                        <img class="img-responsive" src="presentation-data/img/stability-cycle-0.png" height="80%" width="80%"/>
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>Memory arises from unfolding free energy</h4>
+                    <div align="center">
+                        <img class="img-responsive" src="presentation-data/img/stability-cycle-1.png" height="80%" width="80%"/>
+                    </div>
+                </section>
+
+                <section>
+                    <h4>But things need not be so simple...</h4>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="presentation-data/img/gr-switch.png" height="95%" width="95%"/>
+                        </div> 
+                        <div class="col-xs-8">
+                            <img class="img-responsive fragment" src="presentation-data/img/allosteric-switch.png" height="115%" width="115%"/>
+                        </div> 
+                    </div>
+
+                    <small>Harms & Thornton (2014) <em>Nature</em></small>
+                </section>
+
+                <section>
+                    <h4>Evolution involves more than two steps...</h4>
+                    <div align="center">
+                        <img src="presentation-data/img/wright.png" height="45%" width="45%"/>
+                    </div>
+                    <div align="center" class="fragment">
+                        <h4>...and protein function is determined by more than two states.</h4> 
+                        <img src="presentation-data/img/ensemble.png" height="35%" width="35%"/><br/>
+                    </div>
+                </section>
+
+                <section>
+                    <h4>Expanded sequence space creates possibility for "long-term" memory.</h4>
+                    <br/>
+                    <div align="center">
+                        <img class="img-responsive" height="70%" width="70%" src="presentation-data/img/cycle-2.png" />
+                    </div>
+                </section>
+
+                <section>
+                    <h4>So what?  How could more than three residues interact, anyway?</h4>
+                </section>
+
+                <section>
+                    <h4>Mutations affect <em>multiple</em> states in an ensemble</h4>
+                    <br/>
+                    <p align="center">
+                        <img class="img-responsive" height="50%" width="50%" src="presentation-data/img/chan-ensemble.png" />
+                    </p>
+                    <small>Sikosek & Chan (2014) <em>J Roy Soc Interface</em> 11:20140419</small>
+                </section>
+
+                <section>
+                    <h4>Some implications:</h4>
+                    <p>A mutation re-weights <em>every</em> state in the ensemble</p>
+                    <p>Every sequence will have a <em>unique</em> ensemble</p>
+                    <p class="fragment" style="color:blue">Maybe <em>every</em> mutation could matter?</p>
+                </section>
+        
+                <section>
+                    <h4>Approach: build a high-order mutant cycle of thermodynamic ensembles and measure memory</h4>
+                    <img src="presentation-data/img/wright.png" height="60%" width="60%"/><br/>
+                    <small>Wright (1932) <em>Proceedings of the Sixth International Congress of Genetics</em> 356</small>
+                </section>
+
+                <section data-transition="fade">
+                    <div class="row">
+                    <img src="presentation-data/img/lattice-0.png" height="90%" width="90%"/><br/>
+                </section>
+
+                <section data-transition="fade">
+                    <div class="row">
+                    <img src="presentation-data/img/lattice-1.png" height="90%" width="90%"/><br/>
+                </section>
+
+                <!--
+                <section data-transition="fade">
+                    <div align="center">
+                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/cycle-0.png" />
+                        <small>Sailer & Harms (submitted)</small>
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <div align="center">
+                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/cycle-1.png" />
+                        <small>Sailer & Harms (submitted)</small>
+                    </div>
+                </section>
+                -->
+
+                <section>
+                    <div align="center">
+                        <h4>Can we see this experimentally?</h4>
+                        <br/>
+                        <img class="img-responsive fragment" height="60%" width="60%" src="presentation-data/img/hoe.png" />
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>Does it matter for evolution?</h4>
+                    <div align="center">
+                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/trajectories-0.png" />
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>Does it matter for evolution?</h4>
+                    <div align="center">
+                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/trajectories-1.png" />
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>Does it matter for evolution?</h4>
+                    <div align="center">
+                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/trajectories-2.png" />
+                    </div>
+                </section>
+
+                <section>
+                    <h4>Conclusions</h4>
+                    <ul>
+                        <li class="fragment">Epistasis + time leads to evolutionary memory</>
+                        <li class="fragment">Experimental genotype-phenotype maps exhibit long-term memory (high-order epistasis)</li>
+                        <li class="fragment">These high-order interactions shape evolution</li>
+                        <li class="fragment">Long-term memory is a natural consequence of the ensemble nature of proteins (and other biological systems)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>Harms Lab</h4>
+                    <div align="center">
+                        <img src="presentation-data/img/lab-photo.jpg" height="70%" width="70%" class="img-responsnive" />
+                    </div>
+
+
+                    <h4>Funding</h4>
+                    <div class="row">
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-1">
+
+                            <div class="row">
+                                <object class="img-responsive" height="90%" width="90%" data="presentation-data/img/funding/sloan_250x250.png" type="image/png">
+                                    <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/pew-lecture/funding/sloan_250x250.png" height="90%" width="90%" />
+                                </object>
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+
+                            <div class="row">
+                                <object class="img-responsive" height="90%" width="90%" data="presentation-data/img/funding/pew_500x250.png" type="image/png">
+                                    <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/pew-lecture/funding/pew_500x250.png" height="90%" width="90%" />
+                                </object>
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+
+                            <div class="row">
+                                <object class="img-responsive" height="90%" width="90%" data="presentation-data/img/funding/aha_500x250.png" type="image/png">
+                                    <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/pew-lecture/funding/aha_500x250.png" height="90%" width="90%" />
+                                </object>
+                            </div>
+                        </div>
+                        <div class="col-xs-1">
+
+                            <div class="row">
+                                <object class="img-responsive" height="90%" width="90%" data="presentation-data/img/funding/ohsu_250x250.png" type="image/png">
+                                    <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/pew-lecture/funding/ohsu_250x250.png" height="90%" width="90%" />
+                                </object>
+                            </div>
+                        </div>
+                        <div class="col-xs-1">
+
+                            <div class="row">
+                                <object class="img-responsive" height="90%" width="90%" data="presentation-data/img/funding/nih_250x250.png" type="image/png">
+                                    <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/pew-lecture/funding/nih_250x250.png" height="90%" width="90%" />
+                                </object>
+                            </div>
+                        </div>
+                        <div class="col-xs-1">
+
+                            <div class="row">
+                                <object class="img-responsive" height="90%" width="90%" data="presentation-data/img/funding/uo_250x250.png" type="image/png">
+                                    <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/8440421/pew-lecture/funding/uo_250x250.png" height="90%" width="90%" />
+                                </object>
+                            </div>
+                        </div>
+                        <div class="col-xs-2"></div>
+                    </div>
+                </section>
+			</div>
+            
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+    
+		<script>
+
+            var USE_LOCAL = false;
+
+            if (USE_LOCAL) {
+                var mathjax_location = 'MathJax-master/MathJax.js';
+                var jquery_location = 'js/jquery-1.11.2.min.js';
+                var bootstrap_location = 'js/bootstrap.min.js';
+            } else {
+                var mathjax_location = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js';
+                var jquery_location = 'https://code.jquery.com/jquery-2.1.4.min.js';
+                var bootstrap_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js';
+            }
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Add math, using local mathjax
+                math: {
+                    mathjax: mathjax_location,
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },    // mathjax
+                    { src: jquery_location } ,
+                    { src: bootstrap_location } 
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
