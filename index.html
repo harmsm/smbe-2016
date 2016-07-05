@@ -40,43 +40,59 @@
 			<div class="slides">
 
                 <section>
-                    <h3>Ensembles, Epistasis and Evolution</h3>
+                    <h3>Epistasis, Evolution and Ensembles</h3>
                     <br/>
                     <h4>Mike Harms</h4>
                     <h4>University of Oregon</h4>
                     <br/>
-                    <p class="fragment">Gaining evolutionary insights <em>from</em> folding.</p>
-                </section>
-
-                <section data-transition="fade">
-                    <h4>How do events alter future outcomes?</h4>
-                    <div align="center">
-                        <img src="presentation-data/img/spock-0.png" height="100%" width="100%" />
-                    </div>
-                </section>
-
-                <section data-transition="fade">
-                    <h4>How do events alter future outcomes?</h4>
-                    <div align="center">
-                        <img src="presentation-data/img/spock-1.png" height="100%" width="100%" />
-                    </div>
-                </section>
-
-                <section data-transition="fade">
-                    <h4>How do events alter future outcomes?</h4>
-                    <div align="center">
-                        <img src="presentation-data/img/spock-3.png" height="100%" width="100%" />
-                    </div>
-                </section>
-    
-                <section>
-                    <h4>How do the physical properties of proteins shape their evolution?</h4>
-                    <br/>
-                    <h4 class="fragment" style="color:blue">Thermodynamic ensembles create long-term evolutionary memory</h4> 
                 </section>
 
                 <section>
-                    <h4>Evolutionary memory: the case of oseltamivir resistance in H1N1 influenza</h4>
+                    <p>How does epistasis alter evolutionary trajectories and outcomes.</p>
+                </section>
+
+                <!--
+                <section>
+                    <h4>How does the structure of the genotype-phenotype map shape evolutionary trajectories and outcomes?</h4>
+                </section>
+
+
+                <section data-transition="fade">
+                    <p>How does the word <span style="color:rgb(164,0,199);">LION</span> evolve into <span style="color:rgb(250,157,0);">TOAD</span>?</p>
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/sequence-space_0.png" type="image/png" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/sequence-space_0.png" height="100%" width="100%"/>
+                        </object>
+                        <p style="color:white;">English shapes possible trajectories</p>
+                        <small>Smith JM (1970), Nature (<a href="doi:10.1038/225563a0">doi:10.1038/225563a0</a>)</small>
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <p>How does the word <span style="color:rgb(164,0,199);">LION</span> evolve into <span style="color:rgb(250,157,0);">TOAD</span>?</p>
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/sequence-space_1.png" type="image/png" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/sequence-space_1.png" height="100%" width="100%"/>
+                        </object>
+                        <p style="color:white;">English shapes possible trajectories</p>
+                        <small>Smith JM (1970), Nature (<a href="doi:10.1038/225563a0">doi:10.1038/225563a0</a>)</small>
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <p>How does the word <span style="color:rgb(164,0,199);">LION</span> evolve into <span style="color:rgb(250,157,0);">TOAD</span>?</p>
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/sequence-space_3.png" type="image/png" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/sequence-space_3.png" height="100%" width="100%"/>
+                        </object>
+                        <p style="color:white;">English shapes possible trajectories</p>
+                        <small>Smith JM (1970), Nature (<a href="doi:10.1038/225563a0">doi:10.1038/225563a0</a>)</small>
+                    </div>
+                </section>
+                -->
+
+                <section>
+                    <h4>Epistasis: the case of oseltamivir resistance in H1N1 influenza</h4>
                     <ul> 
                         <li class="fragment">In 1991, the H274Y mutation to an influenza protein was shown to compromise viral fitness</li>
                         <li class="fragment">In 2008, H274Y entered the H1N1 population and conferred resistance to the drug oseltamivir</li>
@@ -87,17 +103,196 @@
                     <small>Bloom et al. (2010) <em>Science</em> 328:1272</small>
                     <br/>
 
-                    <h4 class="fragment"><span style="color:blue">Evolutionary memory:</span> the effect of a mutation depends on previous substitutions</h4>
-                    <p class="fragment">(epistasis + time)</p>
+                    <h4 class="fragment"><span style="color:blue">Evolutionary memory = epistasis + time:</span> the effect of a mutation depends on previous substitutions</h4>
                 </section>
 
                 <section>
-                    <h4>Memory can be quantified by decomposing a mutant cycle</h4>
-                    <p align="center">
-                        <img class="img-responsive" height="30%" width="30%" src="presentation-data/img/basic-model.png" />
-                    </p>
+                    <p>Epistasis can have many effects:</p>
+                    <ul>
+                        <li>Limits evolutionary trajectories (making evolution follow predictable trajectories). <br/><small>Weinreich et al (2006) <em>Science</em> 312(7):111</small></li>
+                        <li>Stochastically opens evolutionary trajectories (making evolution contingent on the past). <br/><small>Harms & Thornton (2014) <em>Nature</em> 512:203
+</small></li>
+                        <li>"Entrenches" evolutionary trajectories (making evolution irreversible). <br/><small>Shah et al. (2015) <em>PNAS</em> 112(25):E3226</small></li>
+                    </ul>           
+                </section> 
+
+                <section>
+                    <p>But what if we expand sequence space?</p>
+                    <img src="presentation-data/img/wright.png" height="100%" width="100%"/><br/>
+                    <small>Wright (1932) <em>Proceedings of the Sixth International Congress of Genetics</em> 356</small>
                 </section>
 
+                <!-- High-order epistasis -->
+                <section>
+                    <h4>Larger sequence spaces raise possibility of ''high-order" epistasis</h4>
+
+                    <object align="center" class="img-responsive" data="presentation-data/img/hoe-papers.png" type="image/png" height="100%" width="100%">
+                        <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/hoe-papers.png" height="100%" width="100%"/>
+                    </object>
+
+                    <br/>
+                    <h4 class="fragment" style="color:blue">Long-term memory?</h4>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>Questions:</h4>
+                    <ul>
+                        <li>Do experimental genotype-phenotype maps exhibit high-order epistasis?</li>
+                        <li>Does this epistasis alter evolutionary trajectories?</li>
+                        <li>Where (might) it come from?</li>
+                    </ul>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>Questions:</h4>
+                    <ul>
+                        <li style="color:red">Do experimental genotype-phenotype maps exhibit high-order epistasis?</li>
+                        <li style="color:gray">Does this epistasis alter evolutionary trajectories?</li>
+                        <li style="color:gray">Where (might) it come from?</li>
+                    </ul>
+                </section>
+
+                <section>
+
+                    <h4>High-order epistasis can be measured in binary genotype-phenotype maps></h4>
+
+                    <div class="row">
+
+                        <div class="col-xs-5">
+                            <object class="img-responsive" data="presentation-data/img/map-schematic.png" type="image/png" height="100%" width="100%">
+                                <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/map-schematic.png" height="100%" width="100%"/>
+                            </object>
+                        </div>
+                        <div class="col-xs-7 fragment">
+
+                            <small>
+                              <table>
+                                <tr>
+                                    <td>Num. sites</td>
+                                    <td>Genotype</td>
+                                    <td>Phenotype</td>
+                                    <td>Reference</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Enzyme point mutations</td>
+                                    <td>Bacterial fitness</td>
+                                    <td>Weinreich (2006)</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Protein/DNA point mutations</td>
+                                    <td>Protein/DNA affinity</td>
+                                    <td>Anderson (2015)</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Enzyme point mutants</td>
+                                    <td>Bacterial fitness</td>
+                                    <td>Chou (2011)</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Random genomic mutations</td>
+                                    <td>Fungual fitness</td>
+                                    <td>de Visser (2009)</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Combinations of enzyme alleles</td>
+                                    <td>Yeast halploid growth rate</td>
+                                    <td>Hall (2004)</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Combinations of enzyme alleles</td>
+                                    <td>Yeast diploid growth rate</td>
+                                    <td>Hall (2004)</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Combinations of enzyme alleles</td>
+                                    <td>Yeast mating efficiency</td>
+                                    <td>Hall (2004)</td>
+                                </tr>
+
+                              </table>
+                            </small>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <!-- Formal model definition. --> 
+        
+                <section data-transition="fade">
+                    <object class="img-responsive" data="presentation-data/img/modeling_0.png" type="image/png">
+                        <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/modeling_0.png"/>
+                    </object>
+                </section>
+
+                <section data-transition="fade">
+                    <object class="img-responsive" data="presentation-data/img/modeling_1.png" type="image/png">
+                        <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/modeling_1.png"/>
+                    </object>
+                </section>
+
+                <!--
+                <section data-transition="fade">
+                    <object class="img-responsive" data="presentation-data/img/modeling_2.png" type="image/png">
+                        <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/modeling_2.png"/>
+                    </object>
+                </section>
+
+                <section data-transition="fade">
+                    <object class="img-responsive" data="presentation-data/img/modeling_3.png" type="image/png">
+                        <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/modeling_3.png"/>
+                    </object>
+                </section>
+
+                -->
+                <section data-transition="fade">
+                    <object class="img-responsive" data="presentation-data/img/modeling_4.png" type="image/png">
+                        <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/modeling_4.png"/>
+                    </object>
+                </section>
+
+                <section data-transition="fade">
+                    <object class="img-responsive" data="presentation-data/img/modeling_5.png" type="image/png">
+                        <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/modeling_5.png"/>
+                    </object>
+                </section>
+
+                <section data-transition="fade">
+                    <object class="img-responsive" data="presentation-data/img/modeling_6.png" type="image/png">
+                        <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/modeling_6.png"/>
+                    </object>
+                </section>
+
+                <section data-transition="fade">
+                    <object class="img-responsive" data="presentation-data/img/modeling_7.png" type="image/png">
+                        <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/modeling_7.png"/>
+                    </object>
+                </section>
+
+                <section>
+                    <h4>Stuff</h4>
+                    <br/>
+                    <p>Experimental uncertainty</p>
+                    <br/>
+                    <p>Nonlinear scales</p>
+                    <br/>
+                </section>
+
+                <section>
+                    <div align="center">
+                        <h4>Can we see this experimentally?</h4>
+                        <br/>
+                        <img class="img-responsive fragment" height="60%" width="60%" src="presentation-data/img/hoe.png" />
+                    </div>
+                </section>
+
+                <!--
                 <section data-transition="fade">
                     <h4>Memory arises from unfolding free energy</h4>
                     <div align="center">
@@ -111,42 +306,88 @@
                         <img class="img-responsive" src="presentation-data/img/stability-cycle-1.png" height="80%" width="80%"/>
                     </div>
                 </section>
+                -->
 
+                <!-- 
                 <section>
-                    <h4>But things need not be so simple...</h4>
-                    <div class="row">
-                        <div class="col-xs-4">
-                            <img class="img-responsive" src="presentation-data/img/gr-switch.png" height="95%" width="95%"/>
-                        </div> 
-                        <div class="col-xs-8">
-                            <img class="img-responsive fragment" src="presentation-data/img/allosteric-switch.png" height="115%" width="115%"/>
-                        </div> 
-                    </div>
-
-                    <small>Harms & Thornton (2014) <em>Nature</em></small>
-                </section>
-
-                <section>
-                    <h4>Evolution involves more than two steps...</h4>
-                    <div align="center">
-                        <img src="presentation-data/img/wright.png" height="45%" width="45%"/>
-                    </div>
-                    <div align="center" class="fragment">
-                        <h4>...and protein function is determined by more than two states.</h4> 
-                        <img src="presentation-data/img/ensemble.png" height="35%" width="35%"/><br/>
-                    </div>
-                </section>
-
-                <section>
-                    <h4>Expanded sequence space creates possibility for "long-term" memory.</h4>
+                    <h4>How do the physical properties of proteins shape their evolution?</h4>
                     <br/>
+                    <h4 class="fragment" style="color:blue">Thermodynamic ensembles create long-term evolutionary memory</h4> 
+                </section>
+                -->
+
+                <section data-transition="fade">
+                    <h4>Questions:</h4>
+                    <ul>
+                        <li style="color:red">Do experimental genotype-phenotype maps exhibit high-order epistasis?</li>
+                        <li style="color:gray">Does this epistasis alter evolutionary trajectories?</li>
+                        <li style="color:gray">Where (might) it come from?</li>
+                    </ul>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>Questions:</h4>
+                    <ul>
+                        <li style="color:gray">Do experimental genotype-phenotype maps exhibit high-order epistasis?</li>
+                        <li style="color:red">Does this epistasis alter evolutionary trajectories?</li>
+                        <li style="color:gray">Where (might) it come from?</li>
+                    </ul>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>Does it matter for evolution?</h4>
                     <div align="center">
-                        <img class="img-responsive" height="70%" width="70%" src="presentation-data/img/cycle-2.png" />
+                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/trajectories-0.png" />
                     </div>
                 </section>
 
-                <section>
-                    <h4>So what?  How could more than three residues interact, anyway?</h4>
+                <section data-transition="fade">
+                    <h4>Does it matter for evolution?</h4>
+                    <div align="center">
+                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/trajectories-1.png" />
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>Does it matter for evolution?</h4>
+                    <div align="center">
+                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/trajectories-2.png" />
+                    </div>
+                </section>
+
+
+                <!--
+                <section data-transition="fade">
+                    <div align="center">
+                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/cycle-0.png" />
+                        <small>Sailer & Harms (submitted)</small>
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <div align="center">
+                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/cycle-1.png" />
+                        <small>Sailer & Harms (submitted)</small>
+                    </div>
+                </section>
+                -->
+
+                <section data-transition="fade">
+                    <h4>Questions:</h4>
+                    <ul>
+                        <li style="color:gray">Do experimental genotype-phenotype maps exhibit high-order epistasis?</li>
+                        <li style="color:red">Does this epistasis alter evolutionary trajectories?</li>
+                        <li style="color:gray">Where (might) it come from?</li>
+                    </ul>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>Questions:</h4>
+                    <ul>
+                        <li style="color:gray">Do experimental genotype-phenotype maps exhibit high-order epistasis?</li>
+                        <li style="color:gray">Does this epistasis alter evolutionary trajectories?</li>
+                        <li style="color:red">Where (might) it come from?</li>
+                    </ul>
                 </section>
 
                 <section>
@@ -181,60 +422,6 @@
                     <img src="presentation-data/img/lattice-1.png" height="90%" width="90%"/><br/>
                 </section>
 
-                <!--
-                <section data-transition="fade">
-                    <div align="center">
-                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/cycle-0.png" />
-                        <small>Sailer & Harms (submitted)</small>
-                    </div>
-                </section>
-
-                <section data-transition="fade">
-                    <div align="center">
-                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/cycle-1.png" />
-                        <small>Sailer & Harms (submitted)</small>
-                    </div>
-                </section>
-                -->
-
-                <section>
-                    <div align="center">
-                        <h4>Can we see this experimentally?</h4>
-                        <br/>
-                        <img class="img-responsive fragment" height="60%" width="60%" src="presentation-data/img/hoe.png" />
-                    </div>
-                </section>
-
-                <section data-transition="fade">
-                    <h4>Does it matter for evolution?</h4>
-                    <div align="center">
-                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/trajectories-0.png" />
-                    </div>
-                </section>
-
-                <section data-transition="fade">
-                    <h4>Does it matter for evolution?</h4>
-                    <div align="center">
-                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/trajectories-1.png" />
-                    </div>
-                </section>
-
-                <section data-transition="fade">
-                    <h4>Does it matter for evolution?</h4>
-                    <div align="center">
-                        <img class="img-responsive" height="75%" width="75%" src="presentation-data/img/trajectories-2.png" />
-                    </div>
-                </section>
-
-                <section>
-                    <h4>Conclusions</h4>
-                    <ul>
-                        <li class="fragment">Epistasis + time leads to evolutionary memory</>
-                        <li class="fragment">Experimental genotype-phenotype maps exhibit long-term memory (high-order epistasis)</li>
-                        <li class="fragment">These high-order interactions shape evolution</li>
-                        <li class="fragment">Long-term memory is a natural consequence of the ensemble nature of proteins (and other biological systems)</li>
-                    </ul>
-                </section>
 
                 <section>
                     <h4>Harms Lab</h4>
@@ -297,6 +484,29 @@
                         <div class="col-xs-2"></div>
                     </div>
                 </section>
+               
+                <!-- 
+                <section data-transition="fade">
+                    <h4>How do events alter future outcomes?</h4>
+                    <div align="center">
+                        <img src="presentation-data/img/spock-0.png" height="100%" width="100%" />
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>How do events alter future outcomes?</h4>
+                    <div align="center">
+                        <img src="presentation-data/img/spock-1.png" height="100%" width="100%" />
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <h4>How do events alter future outcomes?</h4>
+                    <div align="center">
+                        <img src="presentation-data/img/spock-3.png" height="100%" width="100%" />
+                    </div>
+                </section>
+                -->
 			</div>
             
 
@@ -307,7 +517,7 @@
     
 		<script>
 
-            var USE_LOCAL = false;
+            var USE_LOCAL = true;
 
             if (USE_LOCAL) {
                 var mathjax_location = 'MathJax-master/MathJax.js';
@@ -353,3 +563,6 @@
 
 	</body>
 </html>
+
+
+
