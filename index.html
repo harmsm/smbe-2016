@@ -51,8 +51,10 @@
 
                 <section>
                     <h4>Harms Lab</h4>
-                    <div align="center">
-                        <img src="presentation-data/img/lab-photo.jpg" height="70%" width="70%" class="img-responsnive" />
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/lab-photo.jpg" type="image/jpg" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/lab-photo.jpg" height="100%" width="100%"/>
+                        </object>
                     </div>
                     <p>(Zach Sailer)</p>
 
@@ -103,6 +105,15 @@
                 -->
 
                 <section>
+                    <p>Epistasis can have many effects:</p>
+                    <ul>
+                        <li>Stochastically opens evolutionary trajectories (making evolution contingent on the past). <br/><small>Harms & Thornton (2014) <em>Nature</em> 512:203</small></li>
+                        <li>Limits evolutionary trajectories (making evolution follow predictable trajectories). <br/><small>Weinreich et al (2006) <em>Science</em> 312(7):111</small></li>
+                        <li>"Entrenches" evolutionary trajectories (making evolution irreversible). <br/><small>Shah et al. (2015) <em>PNAS</em> 112(25):E3226</small></li>
+                    </ul>           
+                </section> 
+
+                <section>
                     <h4>Epistasis: the case of oseltamivir resistance in H1N1 influenza</h4>
                     <ul> 
                         <li class="fragment">In 1991, the H274Y mutation to an influenza protein was shown to compromise viral fitness</li>
@@ -113,36 +124,40 @@
                     <br/>
                     <small>Bloom et al. (2010) <em>Science</em> 328:1272</small>
                     <br/>
+                    <p class="fragment"><span style="color:blue">Evolutionary memory</span>: effect of mutation depends on a previous substitution</p>
 
                 </section>
 
-                <section>
-                    <p>Epistasis can have many effects:</p>
-                    <ul>
-                        <li>Stochastically opens evolutionary trajectories (making evolution contingent on the past). <br/><small>Harms & Thornton (2014) <em>Nature</em> 512:203</small></li>
-                        <li>Limits evolutionary trajectories (making evolution follow predictable trajectories). <br/><small>Weinreich et al (2006) <em>Science</em> 312(7):111</small></li>
-                        <li>"Entrenches" evolutionary trajectories (making evolution irreversible). <br/><small>Shah et al. (2015) <em>PNAS</em> 112(25):E3226</small></li>
-                    </ul>           
-                </section> 
-
+                <!--
                 <section>
                     <p>But what if we expand sequence space?</p>
                     <img src="presentation-data/img/wright.png" height="100%" width="100%"/><br/>
                     <small>Wright (1932) <em>Proceedings of the Sixth International Congress of Genetics</em> 356</small>
                 </section>
+                -->
 
                 <!-- High-order epistasis -->
                 <section>
-                    <h4>Larger sequence spaces raise possibility of ''high-order" epistasis</h4>
+                    <h4>What about <em>high-order</em> epistasis between multiple mutations?</h4>
 
                     <object align="center" class="img-responsive" data="presentation-data/img/hoe-papers.png" type="image/png" height="100%" width="100%">
                         <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/hoe-papers.png" height="100%" width="100%"/>
                     </object>
 
                     <br/>
-                    <h4 class="fragment" style="color:blue">Long-term memory?</h4>
+                    <p class="fragment"><span style="color:blue">Long-term memory?</span> The effect of a mutation depends on a whole collection of previous substitutions</p>
                 </section>
 
+                <section>
+                    <p>Separate epistasis arising from <em>genotype</em> from epistasis arising from <em>phenotype</em>.</p><br/>
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/nonlinear-model_schematic_0.png" type="image/png" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/nonlinear-model_schematic_0.png" height="100%" width="100%"/>
+                        </object>
+                    </div>
+                </section>
+
+                <!--
                 <section data-transition="fade">
                     <h4>Questions:</h4>
                     <ul>
@@ -160,6 +175,7 @@
                         <li style="color:gray">Where (might) it come from?</li>
                     </ul>
                 </section>
+                -->
 
                 <section>
 
@@ -229,7 +245,27 @@
                             </small>
                         </div>
                     </div>
+                    <small>de Visser et al. (2009). <em>The American Naturalist</em> 174(s1):S15–S30.</small>
+
                     
+                </section>
+
+                <section data-transition="fade">
+                    <p>Treat epistasis arising from <em>genotype</em></p><br/>
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/nonlinear-model_schematic_0.png" type="image/png" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/nonlinear-model_schematic_0.png" height="100%" width="100%"/>
+                        </object>
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Treat epistasis arising from <em>genotype</em></p><br/>
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/nonlinear-model_schematic_1.png" type="image/png" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/nonlinear-model_schematic_1.png" height="100%" width="100%"/>
+                        </object>
+                    </div>
                 </section>
 
                 <!-- Formal model definition. --> 
@@ -284,17 +320,39 @@
                     </object>
                 </section>
 
+
+                <!--
+
                 <section>
                     <h4>It's important to treat:</h4>
                     <br/>
                     <p>Experimental uncertainty</p>
-                    <p class="fragment">...bootstrap from uncertainty in $\vec{P}$.</p>
-                    <br/>
+                    <p class="fragment">...bootstrap from uncertainty in phenotypes.</p>
                     <p>Map scale (possibly nonlinear)</p>
                     <p class="fragment">...measure by regression.</p>
                 </section>
+                -->
 
                 <section data-transition="fade">
+                    <p>Treat epistasis arising from <em>phenotype</em></p><br/>
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/nonlinear-model_schematic_1.png" type="image/png" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/nonlinear-model_schematic_1.png" height="100%" width="100%"/>
+                        </object>
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Treat epistasis arising from <em>phenotype</em></p><br/>
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/nonlinear-model_schematic_2.png" type="image/png" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/nonlinear-model_schematic_2.png" height="100%" width="100%"/>
+                        </object>
+                    </div>
+                </section>
+
+                <section data-transition="fade">
+                    <p>Maps exhibit nonlinear scales</p>
                     <div class="row" align="center">
                         <object class="img-responsive" data="presentation-data/img/nonlinear-model_0.png" type="image/png" height="100%" width="100%">
                             <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/nonlinear-model_0.png" height="100%" width="100%"/>
@@ -303,6 +361,7 @@
                 </section>
 
                 <section data-transition="fade">
+                    <p>Maps exhibit nonlinear scales</p>
                     <div class="row" align="center">
                         <object class="img-responsive" data="presentation-data/img/nonlinear-model_1.png" type="image/png" height="100%" width="100%">
                             <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/nonlinear-model_1.png" height="100%" width="100%"/>
@@ -311,6 +370,7 @@
                 </section>
 
                 <section data-transition="fade">
+                    <p>Maps exhibit nonlinear scales</p>
                     <div class="row" align="center">
                         <object class="img-responsive" data="presentation-data/img/nonlinear-model_2.png" type="image/png" height="100%" width="100%">
                             <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/nonlinear-model_2.png" height="100%" width="100%"/>
@@ -318,28 +378,50 @@
                     </div>
                 </section>
 
-                <section data-transition="fade">
+                <section>
+                    <p>Aside: applying a linear epistasis model to data with a nonlinear scale is bad news</p>
                     <div class="row" align="center">
-                        <object class="img-responsive" data="presentation-data/img/nonlinear-model_3.png" type="image/png" height="100%" width="100%">
-                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/nonlinear-model_3.png" height="100%" width="100%"/>
+                        <object class="fragment img-responsive" data="presentation-data/img/artifactual-hoe.png" type="image/png" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/artifactual-hoe.png" height="100%" width="100%"/>
+                        </object>
+                    </div>
+                    <small>Cordell (2002) <em>Hum.  Mol.  Genet.</em> 11(20):2463–2468</small>    
+                </section>
+
+                <section data-transition="fade">
+                    <p>Now apply whole model</p>
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/nonlinear-model_schematic_2.png" type="image/png" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/nonlinear-model_schematic_2.png" height="100%" width="100%"/>
                         </object>
                     </div>
                 </section>
 
                 <section data-transition="fade">
+                    <p>Now apply whole model</p>
                     <div class="row" align="center">
-                        <object class="img-responsive" data="presentation-data/img/nonlinear-model_4.png" type="image/png" height="100%" width="100%">
-                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/nonlinear-model_4.png" height="100%" width="100%"/>
+                        <object class="img-responsive" data="presentation-data/img/nonlinear-model_schematic_0.png" type="image/png" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/nonlinear-model_schematic_0.png" height="100%" width="100%"/>
                         </object>
+                    </div>
+                </section>
+
+
+                <section>
+                    <div align="center">
+                        <h4>Genotype-phenotype maps exhibit extensive high-order epistasis</h4>
+                        <br/>
+                        <img class="img-responsive" height="60%" width="60%" src="presentation-data/img/hoe.png" />
                     </div>
                 </section>
 
                 <section>
                     <div align="center">
-                        <h4>X</h4>
+                        <h4>Genotype-phenotype maps exhibit extensive high-order epistasis</h4>
                         <br/>
-                        <img class="img-responsive fragment" height="60%" width="60%" src="presentation-data/img/hoe.png" />
+                        <img class="img-responsive" height="100%" width="100%" src="presentation-data/img/hall-epistasis.png" />
                     </div>
+                    <small>Hall et al. (2010). <em>J. Hered</em> 101(1):S75-S84</small>
                 </section>
 
                 <!--
@@ -366,6 +448,7 @@
                 </section>
                 -->
 
+                <!--
                 <section data-transition="fade">
                     <h4>Questions:</h4>
                     <ul>
@@ -383,6 +466,7 @@
                         <li style="color:gray">Where (might) it come from?</li>
                     </ul>
                 </section>
+                -->
 
                 <section data-transition="fade">
                     <div class="row" align="center">
@@ -423,6 +507,7 @@
                         </object>
                     </div>
                 </section>
+
                 <!--
                 <section data-transition="fade">
                     <div align="center">
@@ -437,7 +522,6 @@
                         <small>Sailer & Harms (submitted)</small>
                     </div>
                 </section>
-                -->
 
                 <section data-transition="fade">
                     <h4>Questions:</h4>
@@ -456,7 +540,19 @@
                         <li style="color:red">Where (might) it come from?</li>
                     </ul>
                 </section>
+                -->
 
+                <section/>
+                    <h4>Where might this come from?</h4>
+                    <p>Biological systems have multiple states that respond to mutations</p>
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/snase-animation.gif" type="image/gif" height="70%" width="70%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/snase-animation.gif" height="70%" width="70%"/>
+                        </object>
+                    </div>
+                </section>
+
+                <!--
                 <section/>
                     <div class="row" align="center">
                         <h4>Proteins are dynamic</h4>
@@ -486,24 +582,48 @@
                     <img src="presentation-data/img/wright.png" height="60%" width="60%"/><br/>
                     <small>Wright (1932) <em>Proceedings of the Sixth International Congress of Genetics</em> 356</small>
                 </section>
-
+                -->
                 <section data-transition="fade">
-                    <div class="row">
-                    <img src="presentation-data/img/lattice-0.png" height="90%" width="90%"/><br/>
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/lattice-0.png" type="image/gif" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/lattice-0.png" height="100%" width="100%"/>
+                        </object>
+                    </div>
                 </section>
 
                 <section data-transition="fade">
-                    <div class="row">
-                    <img src="presentation-data/img/lattice-1.png" height="90%" width="90%"/><br/>
+                    <div class="row" align="center">
+                        <object class="img-responsive" data="presentation-data/img/lattice-1.png" type="image/gif" height="100%" width="100%">
+                            <img src="https://dl.dropboxusercontent.com/u/8440421/smbe-2016/lattice-1.png" height="100%" width="100%"/>
+                        </object>
+                    </div>
+                </section>
+
+
+                <section>
+                    <h4>Conclusions</h4>
+                    <ul>
+                        <li class="fragment">High-order epistatic interactions between multiple mutations are present in experimental genotype-phenotype maps</li>
+                        <li class="fragment">These interactions shape evolutionary outcomes</li>
+                        <li class="fragment">These interactions (may) be a natural consequence of the integrated nature of biology</li>
+                    </ul>
+
+                    <br/>
+                    <p class="fragment">This result hints at long-term evolutionary memory, where past substitutions alter outcomes over large-regions of the genotype-phenotype map</p>
+                
                 </section>
 
                 <section>
 
+                    <h4>Thanks!</h4>
+                    <br/>
+            
                     <p>harmslab.uoregon.edu</p>
                     <p>github.com/harmslab</p>
                     <p>Mike: @EvolBiochemist, harms@uoregon.edu</p>
                     <p>Zach: @zrsailer, zsailer@uoregon.edu</p>
-                
+               
+                    <br/> 
                     <h4>Funding</h4>
                     <div class="row">
                         <div class="col-xs-2"></div>
